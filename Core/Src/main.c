@@ -24,6 +24,7 @@ void ReverseDirection(void);
 #define DIR_PORT GPIOA
 #define STEP_PORT GPIOA
 
+// Motor speed and direction variables
 int stepDelay = 22000; // Motor speed delay in us to match rotation of earth (linear distance of 174.2mm)
 int lastState = 0; // If state is 0, unit does not move.
 int direction = 1; // Direction 1 starts platform in normal direction.
