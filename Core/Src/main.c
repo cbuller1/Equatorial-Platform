@@ -1,3 +1,4 @@
+
 #include "main.h"
 
 /* Private variables */
@@ -180,7 +181,7 @@ void SystemClock_Config(void) {
         Error_Handler();
     }
 
-    /** Initializes the CPU, AHB and APB buses clocks
+    /** Private Initializes the CPU, AHB and APB buses clocks
     */
     RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
     RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
@@ -194,7 +195,7 @@ void SystemClock_Config(void) {
 }
 
 /**
-* @brief TIM1 Initialization Function
+* Private @brief TIM1 Initialization Function
 * @param None
 * @retval None
 */
@@ -282,3 +283,14 @@ void assert_failed(uint8_t *file, uint32_t line) {
 
 }
 #endif /* USE_FULL_ASSERT */
+
+
+* @attention
+  *
+  * Partial Copyright (c) 2024 STMicroelectronics.
+  * All rights reserved. (HAL and Private)
+  *
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
+  *
